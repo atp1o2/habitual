@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
+import '../styles/main.css';
 import { Link } from 'react-router';
 
 class MastheadView extends Component {
@@ -8,8 +8,8 @@ class MastheadView extends Component {
       <div className="App">
         <div className="App-header">
           <h2>Habitual</h2>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/About">About</Link></li>
+          <button><Link to="/">Home</Link></button>
+          <button><Link to="/About">About</Link></button>
         </div>
       </div>
     );
