@@ -6,6 +6,7 @@ import Main from './components/Main';
 import './styles/index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Navbar } from 'react-bootstrap';
+import '../styles/app.scss';
 
 
 
