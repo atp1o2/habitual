@@ -1,13 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router';
-
-import Main from './components/Main';
 import About from './components/About';
+import Home from './components/Home';
 
 var routes = (
   <Route>
-    <Route path="/" component={Main} />
-    <Route path="/about" component={About} />
+    <Route path="/" component={Home} />
+    <Route path="/About" component={About} />
   </Route>
 );
 
