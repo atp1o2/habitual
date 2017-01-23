@@ -2,7 +2,9 @@ import React from 'react';
 
 const TaskView = React.createClass({
   handleChange (e) {
-
+    console.log('change state!')
+    var newState = !this.props.completed
+    this.props.onClick(newState);
   },
 
   render () {

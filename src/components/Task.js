@@ -1,30 +1,23 @@
 import React from 'react';
 import Reflux from 'reflux';
+import Actions from '../actions/Actions'
 import TaskStore from '../store/TaskStore';
 import TaskView from '../views/TaskView';
 
-// var task = {
-//   description: 'Learn Redux',
-//   completed: "False",
-// };
-
 const Task = React.createClass({
-  // "If all you want to do is update the state of your component to whatever the data store transmits, you can use Reflux.connect(listener,[stateKey]) as a mixin.
   mixins: [
-    Reflux.connect(TaskStore, 'nothing')
+    Reflux.connect(TaskStore, 'task')
   ],
 
   getInitialState () {
-    return {
-      description: 'Learn Redux',
-      completed: false
-    };
+    return TaskStore.getDefaultData()
   },
 
-  changeCompleted () {
+  changeCompleted (newState) {
     this.setState({
-      completed: true
+      completed: newState
     })
+    Actions.updateTask(this.state);
   },
 
   render () {
