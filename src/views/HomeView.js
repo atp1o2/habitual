@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 
 class HomeView extends Component {
   render () {
-    return <h3>This is the Home View</h3>
+    return (
+      <div className="home">
+        <h3>This is the Home View</h3>
+      </div>
+    )
   }
 }
 
