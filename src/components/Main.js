@@ -6,7 +6,7 @@ class Main extends Component {
     return (
       <div>
         <Masthead/>
-        <main className="">
+        <main>
           {this.props.children}
         </main>
       </div>
