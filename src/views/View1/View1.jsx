@@ -10,6 +10,7 @@ export default class View1 extends Component {
     return (
       <ViewStyle>
         <h1>View 1</h1>
+        <hr />
       </ViewStyle>
     );
   }
